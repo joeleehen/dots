@@ -1,0 +1,10 @@
+A note on changing colors:
+I have two colorschemes of the same sketchybar to switch back and forth quickly
+it's janky but here's how I switch from one to the other:
+
+cp gruv_colors gary
+mv gary sketchybarrc
+
+just create a copy of the colorschemes (I named him gary) and move it to sketchybarrc
+
+don't judge
