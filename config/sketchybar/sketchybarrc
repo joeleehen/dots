@@ -11,14 +11,14 @@ sketchybar --bar height=32        \
                  padding_right=10 \
                  topmost=true     \
                  display=all      \
-                 color=0xff313244 
+                 color=0xff3c3836 
 
 sketchybar -m --bar blur_radius=0                                                             \
                     height=37                                                                 \
                     border_width=10                                                           \
                     corner_radius=9                                                           \
                     border_color=0x003c3836                                                   \
-                    topmost=true                                                              \
+                    topmost=true \
               --add item apple.logo left                                                      \
               --set apple.logo icon=󰀵                                                         \
                                icon.font="Hack Nerd Font regular:Bold:25.0"                   \
@@ -63,7 +63,7 @@ sketchybar -m --bar blur_radius=0                                               
 sketchybar --default updates=when_shown                    \
                      drawing=on                            \
                      icon.font="Hack Nerd Font:Bold:17.0"  \
-                     icon.color=0xff313244                 \
+                     icon.color=0xff3c3836                 \
                      label.font="Fira Code Bold:Bold:14.0"      \
                      label.color=0xffffffff                \
                      label.padding_left=4                  \
@@ -88,7 +88,7 @@ do
                               icon.padding_right=8                       \
                               background.padding_left=5                  \
                               background.padding_right=5                 \
-                              background.color=0xfff5e0dc                \
+                              background.color=0xffebdbb2                \
                               background.corner_radius=5                 \
                               background.height=22                       \
                               background.drawing=off                     \
@@ -103,7 +103,7 @@ done
 
 sketchybar --add item space_separator left                            \
            --set space_separator icon=                               \
-                                 icon.color=0xfff5e0dc                \
+                                 icon.color=0xffebdbb2                \
                                  background.padding_left=15           \
                                  background.padding_right=15          \
                                  label.drawing=off                    \
@@ -111,8 +111,8 @@ sketchybar --add item space_separator left                            \
            --add item window_title left                               \
            --set window_title    script="bash $PLUGIN_DIR/window_title.sh" \
                                  label.font="FiraCode Nerd Font Mono:Bold:17.0" \
-                                 label.color=0xfff5e0dc               \
-                                 label.background.color=0xff45475a    \
+                                 label.color=0xffebdbb2               \
+                                 label.background.color=0xff504945    \
                                  label.background.height=22           \
                                  label.background.corner_radius=5     \
                                  label.background.padding_right=10    \
@@ -128,8 +128,8 @@ sketchybar --add item space_separator left                            \
 sketchybar --add item battery right                      \
            --set battery script="bash $PLUGIN_DIR/battery.sh" \
                          update_freq=7.5                  \
-                         label.color=0xff313244           \
-                         background.color=0xff74c7ec      \
+                         label.color=0xff3c3836           \
+                         background.color=0xff83a598      \
                          background.height=20              \
                          background.corner_radius=5        \
            --subscribe battery system_woke
@@ -144,19 +144,19 @@ sketchybar --add item battery right                      \
 #
   sketchybar --add item wifi right                         \
            --set wifi    script="bash $PLUGIN_DIR/wifi.sh"    \
-                         background.color=0xffcba6f7     \
+                         background.color=0xffb16286     \
                          background.height=20            \
                          background.corner_radius=5      \
-                         label.color=0xff313244          \
+                         label.color=0xff3c3836          \
                          update_freq=5
 
 sketchybar                 \
 --add item sound right     \
 --set sound                \
 update_freq=1              \
-icon.color=0xff313244      \
-label.color=0xff313244     \
-background.color=0xffa6e3a1 \
+icon.color=0xff3c3836      \
+label.color=0xff3c3836     \
+background.color=0xff689d6a \
 background.height=20       \
 background.corner_radius=5 \
 script="bash $PLUGIN_DIR/sound.sh"
@@ -220,11 +220,11 @@ sketchybar -m --add       item               time             right             
                                              icon=                                                        \
                                              icon.padding_right=5                                          \
                                              label.padding_left=0                                          \
-                                             icon.color=0xff313244                                         \
+                                             icon.color=0xff3c3836                                         \
                                              icon.font.size=12.0                                           \
                                              icon.y_offset=1                                               \
-                                             label.color=0xff313244                                        \
-                                             background.color=0xfff9e2af                                   \
+                                             label.color=0xff3c3836                                        \
+                                             background.color=0xffd79921                                   \
                                              background.height=20                                          \
                                              background.corner_radius=5                                    \
                                              script="bash $PLUGIN_DIR/time.sh"                 \
@@ -232,8 +232,8 @@ sketchybar -m --add       item               time             right             
               --add       item               date             right                                        \
               --set       date               update_freq=60                                                \
                                              icon=󰃶                                                        \
-                                             background.color=0xfff38ba8                                   \
-                                             label.color=0xff313244                                        \
+                                             background.color=0xfffb4934                                   \
+                                             label.color=0xff3c3836                                        \
                                              label.font="Fira Code Bold:12"                               \
                                              icon.padding_right=5                                          \
                                              label.padding_left=0                                          \
@@ -243,7 +243,7 @@ sketchybar -m --add       item               time             right             
 
 sketchybar -m --add item mic right \
 sketchybar -m --set mic update_freq=3 \
-              --set mic background.color=0xfffab387      \
+              --set mic background.color=0xfffe8019      \
                         background.height=20             \
                         background.corner_radius=5       \
                         icon.padding_right=0             \
@@ -256,19 +256,19 @@ sketchybar -m --set mic update_freq=3 \
 sketchybar -m --add       item               cpu_label right                                               \
               --set       cpu_label          label.font="Fira Code Bold:Semibold:7"                        \
                                              label=CPU                                                     \
-                                             label.color=0xfff5e0dc                                        \
+                                             label.color=0xffebdbb2                                        \
                                              label.padding_left=10                                         \
-                                             background.color=0xff585b70                                   \
-                                             background.height=20                                          \
+                                             background.color=0xff504945 \
+                                             background.height=20 \
                                              y_offset=6                                                    \
                                              width=0                                                       \
 
 sketchybar -m --add       item               cpu_percent right                                             \
-              --set       cpu_percent        label.font="Fira Code Bold:Heavy:12"                          \
-                                             label.color=0xfff5e0dc                                        \
+              --set       cpu_percent        label.font="Fira Code Bold:Heavy:12"                                  \
+                                             label.color=0xffebdbb2                                        \
                                              y_offset=-4                                                   \
                                              update_freq=2                                                 \
-                                             background.color=0xff585b70                                   \
+                                             background.color=0xff504945                                   \
                                              background.height=20                                          \
                                              background.corner_radius=5                                    \
                                              background.y_offset=4                                         \
