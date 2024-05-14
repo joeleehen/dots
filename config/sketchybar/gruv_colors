@@ -9,6 +9,7 @@ sketchybar --bar height=32        \
                  position=top     \
                  padding_left=10  \
                  padding_right=10 \
+                 y_offset=-2      \
                  topmost=true     \
                  display=all      \
                  color=0xff3c3836 

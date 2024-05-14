@@ -14,7 +14,7 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
 
-neofetch
+fastfetch
 . "$HOME/.cargo/env"
 export PATH="Users/josephhendrix/.spicetify:/Users/josephhendrix/nvim-macos/bin:$PATH"
 
