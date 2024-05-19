@@ -20,7 +20,7 @@ export PATH="Users/josephhendrix/.spicetify:/Users/josephhendrix/nvim-macos/bin:
 
 eval "$(/usr/local/bin/brew shellenv)"
 
-alias imgRecord="ssh pi@192.168.0.211"
+alias imgRecord="ssh joepi@192.168.0.46"
 . "$HOME/.cargo/env"
 export PATH=$PATH:/Users/josephhendrix/.spicetify
 source /Users/josephhendrix/alacritty/extra/completions/alacritty.bash
