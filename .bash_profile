@@ -49,3 +49,7 @@ updatedots() {
 	sudo cp ~/.bash_profile ~/dots/
 	echo "copied dotfiles to repository"
 }
+
+mkcd() {
+	mkdir -p -- "$1" && cd -P "$1" && echo "moved to new directory: $1"
+}
